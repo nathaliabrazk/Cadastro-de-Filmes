@@ -1,6 +1,7 @@
 /*FONTES*/
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');/*Creepster*/
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Creepster&display=swap');/*Cormorant Garamond*/
+
 *{
     margin: 0%;
     padding: 0%;
@@ -10,6 +11,7 @@
 :root{
     --branco: #fff;
     --azul: #455e89;
+    --verde: #288360;
     --azul-claro: #2e6f95;
     --roxo: #723c70;
     --violetta: #5c4d7d;
@@ -181,6 +183,23 @@ form, #resposta{
     color: var(--vermelho);
 }
 
+#msgCadastro{
+    color: var(--rosa-vermelho);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#msgCadastro::before{
+    content: "Erro: "; /* Prefixo para indicar que é uma mensagem de erro */
+    font-weight: bold;
+    display: none; /* Inicialmente oculta */
+}
+
+#msgCadastro.error::before{
+    display: inline; /* Mostra apenas se houver erro */
+}
+
+
 /* animation */
 button:hover{
     box-shadow: 5px 5px 10px var(--rosa-forte);
@@ -201,14 +220,5 @@ button:active{
 }
 
 .btnDanger:active{
-    color: var(--vermelho);
-}
-
-/* script */
-.success{
-    color: var(--verde);
-}
-
-.error{
-    color: var(--vermelho);
+    color: var(--rosa-vermelho);
 }
