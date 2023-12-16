@@ -6,4 +6,9 @@
  * Descrição;
  * Diretor;
  * Categoria;
-   ### E liste ela de alguma forma em algum elemento HTML.
+   ### Liste as informações utilizando algum elemento HTML.
+## Tecnologias utilizadas:
+- HTML;
+- CSS;
+- JavaScript.
+   
